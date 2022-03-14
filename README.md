@@ -64,7 +64,7 @@ sharePlatForm是一个数码产品分享平台项目，包括前台系统与后�
 
 ### REGISTER PAGE
 
-
+![img](img/wpsregister.png)
 
 
 ### SEARCH PAGE
