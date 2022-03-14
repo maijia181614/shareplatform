@@ -24,69 +24,68 @@ sharePlatForm是一个数码产品分享平台项目，包括前台系统与后�
 
 #### HOME PAGE
 
-![img](img/wpsbJ9Q1b.png)
+![img](img/wpsontgIi.jpg)
 
-![img](img/wpsR52NRC.png)
+![img](img/wpsObtaY2.png)
 
-![img](img/wps45J43C.png)
+![img](img/wpsSlZXuH.png)
+
+![img](img/wpsjpVslI.png)
 
 ### CART PAGE
 
-![img](img/wpsRKJtDk.png)
+![img](img/wpsNA28Cx.png)
 
-![img](img/wpsbuH5Yc.png)
-
+![img](img/wpsWnCWGz.png)
 
 
 ### PRODUCT DETAIL PAGE
 
-![img](img/wpsLs8wK2.png)
-
+![img](img/wpsld1iKy.png)
 
 
 ### LOGIN PAGE
 
-![img](img/wpsvCS025.png)
+![img](img/wpsYwChds.png)
 
 
 
 ### MY INFO PAGE
 
-![img](img/wpsgqwtVv.png)
+![img](img/wpsqW5Zj0.png)
 
 
 
 ### MY ORDER PAGE
 
-![img](img/wpstoB5AA.png)
+![img](img/wpsseaZt0.png)
 
-![img](img/wpsRtH3hH.png)
+![img](img/wps4apNve.png)
 
 
 
 ### PUBLISH ENTRUST PAGE
 
-![img](img/wpsqZJAWx.png)
+![img](img/wpslg3gHI.png)
 
 
 
 ### REGISTER PAGE
 
-![img](img/wpsFgARDf.png)
-
+![img](img/wpsfYofYh.png)
 
 
 ### SEARCH PAGE
 
-![img](img/wpshcZ8uu.png)
+![img](img/wpsoPuzCk.png)
 
 
 
 ### VERIFY ENTRUST PAGE
 
-![img](img/wpsA5xPdy.png)
+![img](img/wpsSPjrtN.png)
 
-![img](img/wpsz9vFhQ.png)
+![img](img/wpspJihen.png)
 
 
 
