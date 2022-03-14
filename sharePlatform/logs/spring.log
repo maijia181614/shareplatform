@@ -1,0 +1,740 @@
+2022-03-14 15:04:32.274  INFO 1257 --- [main] com.shareplatform.demo.DemoApplication   : Starting DemoApplication using Java 1.8.0_282 on MacBook-Pro with PID 1257 (/Users/maijiaqiang/IdeaProjects/sharePlatform/target/classes started by maijiaqiang in /Users/maijiaqiang/IdeaProjects/sharePlatform)
+2022-03-14 15:04:32.279  INFO 1257 --- [main] com.shareplatform.demo.DemoApplication   : No active profile set, falling back to default profiles: default
+2022-03-14 15:04:32.640  INFO 1257 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-14 15:04:32.641  INFO 1257 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-03-14 15:04:32.657  INFO 1257 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-03-14 15:04:32.831  INFO 1257 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.shareplatform.demo.config.ShiroConfig$$EnhancerBySpringCGLIB$$ad43a57e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:04:32.913  INFO 1257 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:04:32.940  INFO 1257 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:04:32.946  INFO 1257 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$b12a202a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:04:32.948  INFO 1257 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:04:32.953  INFO 1257 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:04:32.965  INFO 1257 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:04:33.217  INFO 1257 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:04:33.221  INFO 1257 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:04:33.224  INFO 1257 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:04:33.227  INFO 1257 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:04:33.232  INFO 1257 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userServiceImpl' of type [com.shareplatform.demo.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:04:33.255  INFO 1257 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroRealm' of type [com.shareplatform.demo.config.EnceladusShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:04:33.263  INFO 1257 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sessionManager' of type [com.shareplatform.demo.config.ShiroSession] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:04:33.267  INFO 1257 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:04:33.436  INFO 1257 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2022-03-14 15:04:33.441  INFO 1257 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-14 15:04:33.442  INFO 1257 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2022-03-14 15:04:33.482  INFO 1257 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-14 15:04:33.482  INFO 1257 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1167 ms
+2022-03-14 15:04:33.913  WARN 1257 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2022-03-14 15:04:33.943  INFO 1257 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2022-03-14 15:04:33.948  INFO 1257 --- [main] com.shareplatform.demo.DemoApplication   : Started DemoApplication in 1.932 seconds (JVM running for 2.248)
+2022-03-14 15:04:33.949  INFO 1257 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2022-03-14 15:04:33.950  INFO 1257 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2022-03-14 15:05:06.591  INFO 1257 --- [http-nio-8088-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-14 15:05:06.591  INFO 1257 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-14 15:05:06.592  INFO 1257 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-14 15:05:06.622  INFO 1257 --- [http-nio-8088-exec-10] a.s.s.m.AbstractValidatingSessionManager : Enabling session validation scheduler...
+2022-03-14 15:05:06.634  INFO 1257 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/category/list+++++++++
+2022-03-14 15:05:06.634  INFO 1257 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/userInfo+++++++++
+2022-03-14 15:05:06.634  INFO 1257 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/isAdmin+++++++++
+2022-03-14 15:05:06.634  INFO 1257 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:05:06.634  INFO 1257 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:05:06.634  INFO 1257 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:05:06.634  INFO 1257 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:05:06.634  INFO 1257 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:05:06.634  INFO 1257 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:05:06.634  INFO 1257 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53563+++++++++
+2022-03-14 15:05:06.634  INFO 1257 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53564+++++++++
+2022-03-14 15:05:06.635  INFO 1257 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53565+++++++++
+2022-03-14 15:05:06.636  INFO 1257 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.isAdmin+++++++++
+2022-03-14 15:05:06.636  INFO 1257 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.userInfo+++++++++
+2022-03-14 15:05:06.636  INFO 1257 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.CategoryController.list+++++++++
+2022-03-14 15:05:06.636  INFO 1257 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:05:06.636  INFO 1257 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:05:06.636  INFO 1257 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:05:06.680  INFO 1257 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:05:06.680  INFO 1257 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:05:06.680  INFO 1257 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:05:06.680  INFO 1257 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:05:06.680  INFO 1257 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:05:06.680  INFO 1257 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:05:06.680  INFO 1257 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:05:06.680  INFO 1257 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:05:06.680  INFO 1257 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53561+++++++++
+2022-03-14 15:05:06.680  INFO 1257 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:05:06.680  INFO 1257 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53562+++++++++
+2022-03-14 15:05:06.680  INFO 1257 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:05:06.680  INFO 1257 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53560+++++++++
+2022-03-14 15:05:06.680  INFO 1257 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=1}]+++++++++
+2022-03-14 15:05:06.680  INFO 1257 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:05:06.680  INFO 1257 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:05:06.680  INFO 1257 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=3}]+++++++++
+2022-03-14 15:05:06.680  INFO 1257 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=2}]+++++++++
+2022-03-14 15:05:06.694  INFO 1257 --- [http-nio-8088-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-14 15:05:06.867  INFO 1257 --- [http-nio-8088-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-14 15:05:57.683  INFO 1257 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/isAdmin+++++++++
+2022-03-14 15:05:57.683  INFO 1257 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:05:57.683  INFO 1257 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:05:57.683  INFO 1257 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53595+++++++++
+2022-03-14 15:05:57.683  INFO 1257 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:05:57.683  INFO 1257 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.isAdmin+++++++++
+2022-03-14 15:05:57.683  INFO 1257 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:05:57.683  INFO 1257 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:05:57.683  INFO 1257 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:05:57.684  INFO 1257 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53594+++++++++
+2022-03-14 15:05:57.684  INFO 1257 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:05:57.684  INFO 1257 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=1}]+++++++++
+2022-03-14 15:05:57.684  INFO 1257 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/userInfo+++++++++
+2022-03-14 15:05:57.684  INFO 1257 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:05:57.684  INFO 1257 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:05:57.684  INFO 1257 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53593+++++++++
+2022-03-14 15:05:57.684  INFO 1257 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.userInfo+++++++++
+2022-03-14 15:05:57.684  INFO 1257 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:05:57.687  INFO 1257 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:05:57.687  INFO 1257 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:05:57.687  INFO 1257 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:05:57.687  INFO 1257 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53597+++++++++
+2022-03-14 15:05:57.688  INFO 1257 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:05:57.688  INFO 1257 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=2}]+++++++++
+2022-03-14 15:05:57.689  INFO 1257 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/category/list+++++++++
+2022-03-14 15:05:57.690  INFO 1257 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:05:57.690  INFO 1257 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:05:57.690  INFO 1257 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53592+++++++++
+2022-03-14 15:05:57.690  INFO 1257 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.CategoryController.list+++++++++
+2022-03-14 15:05:57.690  INFO 1257 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:05:57.690  INFO 1257 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:05:57.691  INFO 1257 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:05:57.691  INFO 1257 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:05:57.691  INFO 1257 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53596+++++++++
+2022-03-14 15:05:57.691  INFO 1257 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:05:57.691  INFO 1257 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=3}]+++++++++
+2022-03-14 15:06:04.127  INFO 1257 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/userInfo+++++++++
+2022-03-14 15:06:04.127  INFO 1257 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:06:04.127  INFO 1257 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:06:04.127  INFO 1257 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53601+++++++++
+2022-03-14 15:06:04.127  INFO 1257 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.userInfo+++++++++
+2022-03-14 15:06:04.127  INFO 1257 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:06:04.127  INFO 1257 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/category/list+++++++++
+2022-03-14 15:06:04.129  INFO 1257 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:06:04.129  INFO 1257 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:06:04.129  INFO 1257 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53602+++++++++
+2022-03-14 15:06:04.129  INFO 1257 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.CategoryController.list+++++++++
+2022-03-14 15:06:04.129  INFO 1257 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:06:04.129  INFO 1257 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/isAdmin+++++++++
+2022-03-14 15:06:04.130  INFO 1257 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:06:04.130  INFO 1257 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:06:04.130  INFO 1257 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53603+++++++++
+2022-03-14 15:06:04.131  INFO 1257 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.isAdmin+++++++++
+2022-03-14 15:06:04.131  INFO 1257 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:06:04.159 ERROR 1257 --- [http-nio-8088-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool] with root cause
+
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_282]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_282]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_282]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_282]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_282]
+	at java.net.Socket.connect(Socket.java:607) ~[na:1.8.0_282]
+	at redis.clients.jedis.DefaultJedisSocketFactory.createSocket(DefaultJedisSocketFactory.java:80) ~[jedis-3.6.3.jar:na]
+	at redis.clients.jedis.Connection.connect(Connection.java:226) ~[jedis-3.6.3.jar:na]
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:135) ~[jedis-3.6.3.jar:na]
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:309) ~[jedis-3.6.3.jar:na]
+	at redis.clients.jedis.BinaryJedis.initializeFromClientConfig(BinaryJedis.java:87) ~[jedis-3.6.3.jar:na]
+	at redis.clients.jedis.BinaryJedis.<init>(BinaryJedis.java:292) ~[jedis-3.6.3.jar:na]
+	at redis.clients.jedis.Jedis.<init>(Jedis.java:167) ~[jedis-3.6.3.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:177) ~[jedis-3.6.3.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:918) ~[commons-pool2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:431) ~[commons-pool2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:356) ~[commons-pool2-2.9.0.jar:2.9.0]
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:75) ~[jedis-3.6.3.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:370) ~[jedis-3.6.3.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:15) ~[jedis-3.6.3.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:283) ~[spring-data-redis-2.5.3.jar:2.5.3]
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:514) ~[spring-data-redis-2.5.3.jar:2.5.3]
+	at org.springframework.data.redis.cache.DefaultRedisCacheWriter.execute(DefaultRedisCacheWriter.java:300) ~[spring-data-redis-2.5.3.jar:2.5.3]
+	at org.springframework.data.redis.cache.DefaultRedisCacheWriter.get(DefaultRedisCacheWriter.java:126) ~[spring-data-redis-2.5.3.jar:2.5.3]
+	at org.springframework.data.redis.cache.RedisCache.lookup(RedisCache.java:89) ~[spring-data-redis-2.5.3.jar:2.5.3]
+	at org.springframework.cache.support.AbstractValueAdaptingCache.get(AbstractValueAdaptingCache.java:58) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.cache.interceptor.AbstractCacheInvoker.doGet(AbstractCacheInvoker.java:73) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.cache.interceptor.CacheAspectSupport.findInCaches(CacheAspectSupport.java:571) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.cache.interceptor.CacheAspectSupport.findCachedItem(CacheAspectSupport.java:536) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:402) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:64) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.7.jar:5.3.7]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.7.jar:5.3.7]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.7.jar:5.3.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.7.jar:5.3.7]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.7.jar:5.3.7]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.7.jar:5.3.7]
+	at com.shareplatform.demo.controller.GoodsController$$EnhancerBySpringCGLIB$$c7e6a633.search(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_282]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_282]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_282]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_282]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.46.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.46.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.4.0.jar:1.4.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.4.0.jar:1.4.0]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.4.0.jar:1.4.0]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.4.0.jar:1.4.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387) ~[shiro-core-1.4.0.jar:1.4.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.4.0.jar:1.4.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.4.0.jar:1.4.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_282]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_282]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_282]
+
+2022-03-14 15:06:12.437 ERROR 1257 --- [http-nio-8088-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool] with root cause
+
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_282]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_282]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_282]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_282]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_282]
+	at java.net.Socket.connect(Socket.java:607) ~[na:1.8.0_282]
+	at redis.clients.jedis.DefaultJedisSocketFactory.createSocket(DefaultJedisSocketFactory.java:80) ~[jedis-3.6.3.jar:na]
+	at redis.clients.jedis.Connection.connect(Connection.java:226) ~[jedis-3.6.3.jar:na]
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:135) ~[jedis-3.6.3.jar:na]
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:309) ~[jedis-3.6.3.jar:na]
+	at redis.clients.jedis.BinaryJedis.initializeFromClientConfig(BinaryJedis.java:87) ~[jedis-3.6.3.jar:na]
+	at redis.clients.jedis.BinaryJedis.<init>(BinaryJedis.java:292) ~[jedis-3.6.3.jar:na]
+	at redis.clients.jedis.Jedis.<init>(Jedis.java:167) ~[jedis-3.6.3.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:177) ~[jedis-3.6.3.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:918) ~[commons-pool2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:431) ~[commons-pool2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:356) ~[commons-pool2-2.9.0.jar:2.9.0]
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:75) ~[jedis-3.6.3.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:370) ~[jedis-3.6.3.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:15) ~[jedis-3.6.3.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:283) ~[spring-data-redis-2.5.3.jar:2.5.3]
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:514) ~[spring-data-redis-2.5.3.jar:2.5.3]
+	at org.springframework.data.redis.cache.DefaultRedisCacheWriter.execute(DefaultRedisCacheWriter.java:300) ~[spring-data-redis-2.5.3.jar:2.5.3]
+	at org.springframework.data.redis.cache.DefaultRedisCacheWriter.get(DefaultRedisCacheWriter.java:126) ~[spring-data-redis-2.5.3.jar:2.5.3]
+	at org.springframework.data.redis.cache.RedisCache.lookup(RedisCache.java:89) ~[spring-data-redis-2.5.3.jar:2.5.3]
+	at org.springframework.cache.support.AbstractValueAdaptingCache.get(AbstractValueAdaptingCache.java:58) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.cache.interceptor.AbstractCacheInvoker.doGet(AbstractCacheInvoker.java:73) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.cache.interceptor.CacheAspectSupport.findInCaches(CacheAspectSupport.java:571) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.cache.interceptor.CacheAspectSupport.findCachedItem(CacheAspectSupport.java:536) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:402) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:64) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.7.jar:5.3.7]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.7.jar:5.3.7]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.7.jar:5.3.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.7.jar:5.3.7]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.7.jar:5.3.7]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.7.jar:5.3.7]
+	at com.shareplatform.demo.controller.GoodsController$$EnhancerBySpringCGLIB$$c7e6a633.search(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_282]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_282]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_282]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_282]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.46.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.46.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.4.0.jar:1.4.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.4.0.jar:1.4.0]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.4.0.jar:1.4.0]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.4.0.jar:1.4.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387) ~[shiro-core-1.4.0.jar:1.4.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.4.0.jar:1.4.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.4.0.jar:1.4.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_282]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_282]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_282]
+
+2022-03-14 15:06:14.820  INFO 1257 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/userInfo+++++++++
+2022-03-14 15:06:14.820  INFO 1257 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:06:14.820  INFO 1257 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:06:14.821  INFO 1257 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53610+++++++++
+2022-03-14 15:06:14.821  INFO 1257 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.userInfo+++++++++
+2022-03-14 15:06:14.821  INFO 1257 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:06:14.824  INFO 1257 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:06:14.824  INFO 1257 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:06:14.824  INFO 1257 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:06:14.821  INFO 1257 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/isAdmin+++++++++
+2022-03-14 15:06:14.826  INFO 1257 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:06:14.826  INFO 1257 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:06:14.826  INFO 1257 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53603+++++++++
+2022-03-14 15:06:14.826  INFO 1257 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.isAdmin+++++++++
+2022-03-14 15:06:14.826  INFO 1257 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:06:14.827  INFO 1257 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53611+++++++++
+2022-03-14 15:06:14.827  INFO 1257 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:06:14.827  INFO 1257 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=3}]+++++++++
+2022-03-14 15:06:14.822  INFO 1257 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:06:14.827  INFO 1257 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:06:14.820  INFO 1257 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:06:14.827  INFO 1257 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:06:14.828  INFO 1257 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:06:14.828  INFO 1257 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:06:14.828  INFO 1257 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53601+++++++++
+2022-03-14 15:06:14.828  INFO 1257 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:06:14.828  INFO 1257 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=1}]+++++++++
+2022-03-14 15:06:14.823  INFO 1257 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/category/list+++++++++
+2022-03-14 15:06:14.829  INFO 1257 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:06:14.829  INFO 1257 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:06:14.829  INFO 1257 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53608+++++++++
+2022-03-14 15:06:14.829  INFO 1257 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.CategoryController.list+++++++++
+2022-03-14 15:06:14.829  INFO 1257 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:06:14.828  INFO 1257 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53609+++++++++
+2022-03-14 15:06:14.831  INFO 1257 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:06:14.831  INFO 1257 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=2}]+++++++++
+2022-03-14 15:10:02.566  INFO 1346 --- [main] com.shareplatform.demo.DemoApplication   : Starting DemoApplication using Java 1.8.0_282 on MacBook-Pro with PID 1346 (/Users/maijiaqiang/IdeaProjects/sharePlatform/target/classes started by maijiaqiang in /Users/maijiaqiang/IdeaProjects/sharePlatform)
+2022-03-14 15:10:02.568  INFO 1346 --- [main] com.shareplatform.demo.DemoApplication   : No active profile set, falling back to default profiles: default
+2022-03-14 15:10:02.924  INFO 1346 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-14 15:10:02.925  INFO 1346 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-03-14 15:10:02.945  INFO 1346 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2022-03-14 15:10:03.121  INFO 1346 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.shareplatform.demo.config.ShiroConfig$$EnhancerBySpringCGLIB$$9dd13602] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:10:03.166  INFO 1346 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:10:03.189  INFO 1346 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:10:03.194  INFO 1346 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$a1b7b0ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:10:03.197  INFO 1346 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:10:03.203  INFO 1346 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:10:03.216  INFO 1346 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:10:03.462  INFO 1346 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:10:03.466  INFO 1346 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:10:03.469  INFO 1346 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:10:03.474  INFO 1346 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:10:03.479  INFO 1346 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userServiceImpl' of type [com.shareplatform.demo.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:10:03.497  INFO 1346 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroRealm' of type [com.shareplatform.demo.config.EnceladusShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:10:03.504  INFO 1346 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sessionManager' of type [com.shareplatform.demo.config.ShiroSession] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:10:03.508  INFO 1346 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:10:03.647  INFO 1346 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2022-03-14 15:10:03.650  INFO 1346 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-14 15:10:03.651  INFO 1346 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2022-03-14 15:10:03.686  INFO 1346 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-14 15:10:03.686  INFO 1346 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1086 ms
+2022-03-14 15:10:04.120  WARN 1346 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2022-03-14 15:10:04.149  INFO 1346 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2022-03-14 15:10:04.155  INFO 1346 --- [main] com.shareplatform.demo.DemoApplication   : Started DemoApplication in 1.794 seconds (JVM running for 2.084)
+2022-03-14 15:10:04.155  INFO 1346 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2022-03-14 15:10:04.156  INFO 1346 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2022-03-14 15:10:09.697  INFO 1346 --- [http-nio-8088-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-14 15:10:09.697  INFO 1346 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-14 15:10:09.698  INFO 1346 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-14 15:10:09.722  INFO 1346 --- [http-nio-8088-exec-8] a.s.s.m.AbstractValidatingSessionManager : Enabling session validation scheduler...
+2022-03-14 15:10:09.734  INFO 1346 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/category/list+++++++++
+2022-03-14 15:10:09.734  INFO 1346 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/userInfo+++++++++
+2022-03-14 15:10:09.734  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/isAdmin+++++++++
+2022-03-14 15:10:09.735  INFO 1346 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:09.735  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:09.735  INFO 1346 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:09.735  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:09.735  INFO 1346 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:09.735  INFO 1346 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53824+++++++++
+2022-03-14 15:10:09.735  INFO 1346 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:09.735  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53823+++++++++
+2022-03-14 15:10:09.735  INFO 1346 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53819+++++++++
+2022-03-14 15:10:09.736  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.isAdmin+++++++++
+2022-03-14 15:10:09.736  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:10:09.736  INFO 1346 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.CategoryController.list+++++++++
+2022-03-14 15:10:09.736  INFO 1346 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.userInfo+++++++++
+2022-03-14 15:10:09.736  INFO 1346 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:10:09.736  INFO 1346 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:10:09.760  INFO 1346 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:10:09.760  INFO 1346 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:10:09.760  INFO 1346 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:10:09.760  INFO 1346 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:09.760  INFO 1346 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:09.760  INFO 1346 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:09.760  INFO 1346 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:09.760  INFO 1346 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53821+++++++++
+2022-03-14 15:10:09.760  INFO 1346 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:09.760  INFO 1346 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:10:09.760  INFO 1346 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:09.760  INFO 1346 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53820+++++++++
+2022-03-14 15:10:09.760  INFO 1346 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:10:09.760  INFO 1346 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=2}]+++++++++
+2022-03-14 15:10:09.760  INFO 1346 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=1}]+++++++++
+2022-03-14 15:10:09.760  INFO 1346 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53822+++++++++
+2022-03-14 15:10:09.760  INFO 1346 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:10:09.760  INFO 1346 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=3}]+++++++++
+2022-03-14 15:10:09.770  INFO 1346 --- [http-nio-8088-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-14 15:10:09.933  INFO 1346 --- [http-nio-8088-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-14 15:10:19.700  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/userInfo+++++++++
+2022-03-14 15:10:19.700  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:19.700  INFO 1346 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/isAdmin+++++++++
+2022-03-14 15:10:19.700  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:19.700  INFO 1346 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:19.700  INFO 1346 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:19.700  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53838+++++++++
+2022-03-14 15:10:19.701  INFO 1346 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53839+++++++++
+2022-03-14 15:10:19.701  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.userInfo+++++++++
+2022-03-14 15:10:19.701  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:10:19.701  INFO 1346 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.isAdmin+++++++++
+2022-03-14 15:10:19.701  INFO 1346 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:10:19.700  INFO 1346 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/category/list+++++++++
+2022-03-14 15:10:19.702  INFO 1346 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:19.702  INFO 1346 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:19.702  INFO 1346 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53840+++++++++
+2022-03-14 15:10:19.702  INFO 1346 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.CategoryController.list+++++++++
+2022-03-14 15:10:19.703  INFO 1346 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:10:33.407  INFO 1346 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/goods/search+++++++++
+2022-03-14 15:10:33.407  INFO 1346 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:33.407  INFO 1346 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:33.407  INFO 1346 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53853+++++++++
+2022-03-14 15:10:33.407  INFO 1346 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.GoodsController.search+++++++++
+2022-03-14 15:10:33.407  INFO 1346 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{key=手机}]+++++++++
+2022-03-14 15:10:35.403  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/userInfo+++++++++
+2022-03-14 15:10:35.404  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:35.404  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:35.404  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53854+++++++++
+2022-03-14 15:10:35.405  INFO 1346 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/category/list+++++++++
+2022-03-14 15:10:35.405  INFO 1346 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:35.405  INFO 1346 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:35.406  INFO 1346 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53853+++++++++
+2022-03-14 15:10:35.405  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.userInfo+++++++++
+2022-03-14 15:10:35.406  INFO 1346 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.CategoryController.list+++++++++
+2022-03-14 15:10:35.406  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:10:35.407  INFO 1346 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/isAdmin+++++++++
+2022-03-14 15:10:35.407  INFO 1346 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:35.407  INFO 1346 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:35.407  INFO 1346 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53856+++++++++
+2022-03-14 15:10:35.407  INFO 1346 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.isAdmin+++++++++
+2022-03-14 15:10:35.407  INFO 1346 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:10:35.406  INFO 1346 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:10:35.408  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/goods/detail+++++++++
+2022-03-14 15:10:35.408  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:35.408  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:35.408  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53857+++++++++
+2022-03-14 15:10:35.408  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.GoodsController.detail+++++++++
+2022-03-14 15:10:35.408  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{key=1}]+++++++++
+2022-03-14 15:10:35.408  INFO 1346 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/goods/detail+++++++++
+2022-03-14 15:10:35.409  INFO 1346 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:35.409  INFO 1346 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:35.409  INFO 1346 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53858+++++++++
+2022-03-14 15:10:35.409  INFO 1346 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.GoodsController.detail+++++++++
+2022-03-14 15:10:35.409  INFO 1346 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{key=1}]+++++++++
+2022-03-14 15:10:49.036  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/category/list+++++++++
+2022-03-14 15:10:49.036  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:49.037  INFO 1346 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/userInfo+++++++++
+2022-03-14 15:10:49.038  INFO 1346 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:49.038  INFO 1346 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:49.038  INFO 1346 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53857+++++++++
+2022-03-14 15:10:49.038  INFO 1346 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.userInfo+++++++++
+2022-03-14 15:10:49.038  INFO 1346 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:10:49.038  INFO 1346 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:10:49.038  INFO 1346 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:10:49.038  INFO 1346 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:49.038  INFO 1346 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:49.038  INFO 1346 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:49.038  INFO 1346 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:49.038  INFO 1346 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53854+++++++++
+2022-03-14 15:10:49.038  INFO 1346 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53859+++++++++
+2022-03-14 15:10:49.038  INFO 1346 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:10:49.038  INFO 1346 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=1}]+++++++++
+2022-03-14 15:10:49.038  INFO 1346 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:10:49.039  INFO 1346 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=3}]+++++++++
+2022-03-14 15:10:49.043  INFO 1346 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/isAdmin+++++++++
+2022-03-14 15:10:49.044  INFO 1346 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:49.044  INFO 1346 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:49.044  INFO 1346 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53858+++++++++
+2022-03-14 15:10:49.044  INFO 1346 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.isAdmin+++++++++
+2022-03-14 15:10:49.044  INFO 1346 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:10:49.044  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:49.045  INFO 1346 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:10:49.046  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53853+++++++++
+2022-03-14 15:10:49.046  INFO 1346 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:10:49.046  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.CategoryController.list+++++++++
+2022-03-14 15:10:49.046  INFO 1346 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:10:49.046  INFO 1346 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:10:49.046  INFO 1346 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53856+++++++++
+2022-03-14 15:10:49.046  INFO 1346 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:10:49.046  INFO 1346 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=2}]+++++++++
+2022-03-14 15:13:32.625  INFO 1379 --- [main] com.shareplatform.demo.DemoApplication   : Starting DemoApplication using Java 1.8.0_282 on MacBook-Pro with PID 1379 (/Users/maijiaqiang/IdeaProjects/sharePlatform/target/classes started by maijiaqiang in /Users/maijiaqiang/IdeaProjects/sharePlatform)
+2022-03-14 15:13:32.626  INFO 1379 --- [main] com.shareplatform.demo.DemoApplication   : No active profile set, falling back to default profiles: default
+2022-03-14 15:13:32.943  INFO 1379 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-14 15:13:32.945  INFO 1379 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-03-14 15:13:32.959  INFO 1379 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-03-14 15:13:33.106  INFO 1379 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.shareplatform.demo.config.ShiroConfig$$EnhancerBySpringCGLIB$$9dd13602] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:13:33.143  INFO 1379 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:13:33.164  INFO 1379 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:13:33.169  INFO 1379 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$a1b7b0ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:13:33.171  INFO 1379 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:13:33.175  INFO 1379 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:13:33.187  INFO 1379 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:13:33.433  INFO 1379 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:13:33.437  INFO 1379 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:13:33.440  INFO 1379 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:13:33.443  INFO 1379 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:13:33.447  INFO 1379 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userServiceImpl' of type [com.shareplatform.demo.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:13:33.469  INFO 1379 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroRealm' of type [com.shareplatform.demo.config.EnceladusShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:13:33.476  INFO 1379 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sessionManager' of type [com.shareplatform.demo.config.ShiroSession] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:13:33.480  INFO 1379 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 15:13:33.604  INFO 1379 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2022-03-14 15:13:33.608  INFO 1379 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-14 15:13:33.608  INFO 1379 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2022-03-14 15:13:33.634  INFO 1379 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-14 15:13:33.634  INFO 1379 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 979 ms
+2022-03-14 15:13:34.066  WARN 1379 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2022-03-14 15:13:34.095  INFO 1379 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2022-03-14 15:13:34.101  INFO 1379 --- [main] com.shareplatform.demo.DemoApplication   : Started DemoApplication in 1.656 seconds (JVM running for 1.939)
+2022-03-14 15:13:34.101  INFO 1379 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2022-03-14 15:13:34.102  INFO 1379 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2022-03-14 15:13:36.774  INFO 1379 --- [http-nio-8088-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-14 15:13:36.774  INFO 1379 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-14 15:13:36.776  INFO 1379 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-14 15:13:36.802  INFO 1379 --- [http-nio-8088-exec-10] a.s.s.m.AbstractValidatingSessionManager : Enabling session validation scheduler...
+2022-03-14 15:13:36.813  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/isAdmin+++++++++
+2022-03-14 15:13:36.813  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:36.813  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/userInfo+++++++++
+2022-03-14 15:13:36.813  INFO 1379 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/category/list+++++++++
+2022-03-14 15:13:36.814  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:36.814  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:36.813  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:36.814  INFO 1379 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:36.814  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53908+++++++++
+2022-03-14 15:13:36.814  INFO 1379 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:36.814  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53912+++++++++
+2022-03-14 15:13:36.814  INFO 1379 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53910+++++++++
+2022-03-14 15:13:36.815  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.userInfo+++++++++
+2022-03-14 15:13:36.815  INFO 1379 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.CategoryController.list+++++++++
+2022-03-14 15:13:36.815  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.isAdmin+++++++++
+2022-03-14 15:13:36.815  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:13:36.815  INFO 1379 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:13:36.815  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:13:36.840  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:13:36.840  INFO 1379 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:13:36.840  INFO 1379 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:13:36.840  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:36.840  INFO 1379 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:36.840  INFO 1379 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:36.840  INFO 1379 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:36.840  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:36.840  INFO 1379 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:36.840  INFO 1379 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53909+++++++++
+2022-03-14 15:13:36.840  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53913+++++++++
+2022-03-14 15:13:36.841  INFO 1379 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53911+++++++++
+2022-03-14 15:13:36.841  INFO 1379 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:13:36.841  INFO 1379 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:13:36.841  INFO 1379 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=3}]+++++++++
+2022-03-14 15:13:36.841  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:13:36.841  INFO 1379 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=1}]+++++++++
+2022-03-14 15:13:36.841  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=2}]+++++++++
+2022-03-14 15:13:36.854  INFO 1379 --- [http-nio-8088-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-14 15:13:37.005  INFO 1379 --- [http-nio-8088-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-14 15:13:40.818  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/userInfo+++++++++
+2022-03-14 15:13:40.818  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:40.819  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:40.819  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53926+++++++++
+2022-03-14 15:13:40.819  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.userInfo+++++++++
+2022-03-14 15:13:40.819  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:13:40.819  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/isAdmin+++++++++
+2022-03-14 15:13:40.819  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:40.819  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:40.819  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53928+++++++++
+2022-03-14 15:13:40.819  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.isAdmin+++++++++
+2022-03-14 15:13:40.819  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:13:40.820  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/category/list+++++++++
+2022-03-14 15:13:40.820  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:40.820  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:40.820  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53927+++++++++
+2022-03-14 15:13:40.820  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.CategoryController.list+++++++++
+2022-03-14 15:13:40.820  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:13:40.865  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/goods/search+++++++++
+2022-03-14 15:13:40.865  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:40.865  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:40.865  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53929+++++++++
+2022-03-14 15:13:40.865  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.GoodsController.search+++++++++
+2022-03-14 15:13:40.865  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{key=索尼}]+++++++++
+2022-03-14 15:13:42.380  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/userInfo+++++++++
+2022-03-14 15:13:42.380  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:42.381  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:42.381  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53928+++++++++
+2022-03-14 15:13:42.381  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.userInfo+++++++++
+2022-03-14 15:13:42.381  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:13:42.382  INFO 1379 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/goods/detail+++++++++
+2022-03-14 15:13:42.382  INFO 1379 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:42.382  INFO 1379 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:42.382  INFO 1379 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53932+++++++++
+2022-03-14 15:13:42.382  INFO 1379 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.GoodsController.detail+++++++++
+2022-03-14 15:13:42.382  INFO 1379 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{key=20}]+++++++++
+2022-03-14 15:13:42.383  INFO 1379 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/goods/detail+++++++++
+2022-03-14 15:13:42.384  INFO 1379 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:42.384  INFO 1379 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:42.384  INFO 1379 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53933+++++++++
+2022-03-14 15:13:42.384  INFO 1379 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.GoodsController.detail+++++++++
+2022-03-14 15:13:42.384  INFO 1379 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{key=20}]+++++++++
+2022-03-14 15:13:42.381  INFO 1379 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/isAdmin+++++++++
+2022-03-14 15:13:42.385  INFO 1379 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:42.385  INFO 1379 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:42.385  INFO 1379 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53931+++++++++
+2022-03-14 15:13:42.385  INFO 1379 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.isAdmin+++++++++
+2022-03-14 15:13:42.385  INFO 1379 --- [http-nio-8088-exec-3] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:13:42.381  INFO 1379 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/category/list+++++++++
+2022-03-14 15:13:42.386  INFO 1379 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:42.386  INFO 1379 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:42.386  INFO 1379 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53926+++++++++
+2022-03-14 15:13:42.386  INFO 1379 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.CategoryController.list+++++++++
+2022-03-14 15:13:42.386  INFO 1379 --- [http-nio-8088-exec-7] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:13:47.892  INFO 1379 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/userInfo+++++++++
+2022-03-14 15:13:47.892  INFO 1379 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:47.893  INFO 1379 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:47.893  INFO 1379 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53931+++++++++
+2022-03-14 15:13:47.893  INFO 1379 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.userInfo+++++++++
+2022-03-14 15:13:47.893  INFO 1379 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:13:47.893  INFO 1379 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/category/list+++++++++
+2022-03-14 15:13:47.893  INFO 1379 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:47.893  INFO 1379 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:47.893  INFO 1379 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53928+++++++++
+2022-03-14 15:13:47.894  INFO 1379 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.CategoryController.list+++++++++
+2022-03-14 15:13:47.894  INFO 1379 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:13:47.894  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/isAdmin+++++++++
+2022-03-14 15:13:47.895  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:47.895  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:47.895  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53934+++++++++
+2022-03-14 15:13:47.895  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.isAdmin+++++++++
+2022-03-14 15:13:47.895  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:13:52.484  INFO 1379 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/goods/search+++++++++
+2022-03-14 15:13:52.484  INFO 1379 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:52.484  INFO 1379 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:52.484  INFO 1379 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53928+++++++++
+2022-03-14 15:13:52.485  INFO 1379 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.GoodsController.search+++++++++
+2022-03-14 15:13:52.485  INFO 1379 --- [http-nio-8088-exec-1] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{key=数据线}]+++++++++
+2022-03-14 15:13:53.539  INFO 1379 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/goods/search+++++++++
+2022-03-14 15:13:53.539  INFO 1379 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:53.539  INFO 1379 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:53.539  INFO 1379 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53928+++++++++
+2022-03-14 15:13:53.539  INFO 1379 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.GoodsController.search+++++++++
+2022-03-14 15:13:53.539  INFO 1379 --- [http-nio-8088-exec-9] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{key=手机贴膜}]+++++++++
+2022-03-14 15:13:54.479  INFO 1379 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/goods/search+++++++++
+2022-03-14 15:13:54.479  INFO 1379 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:54.479  INFO 1379 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:54.479  INFO 1379 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53928+++++++++
+2022-03-14 15:13:54.479  INFO 1379 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.GoodsController.search+++++++++
+2022-03-14 15:13:54.479  INFO 1379 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{key=苹果周边}]+++++++++
+2022-03-14 15:13:55.095  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/goods/search+++++++++
+2022-03-14 15:13:55.096  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:55.096  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:55.096  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53928+++++++++
+2022-03-14 15:13:55.096  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.GoodsController.search+++++++++
+2022-03-14 15:13:55.096  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{key=手机支架}]+++++++++
+2022-03-14 15:13:58.412  INFO 1379 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/userInfo+++++++++
+2022-03-14 15:13:58.412  INFO 1379 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:58.412  INFO 1379 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:58.412  INFO 1379 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53928+++++++++
+2022-03-14 15:13:58.413  INFO 1379 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.userInfo+++++++++
+2022-03-14 15:13:58.413  INFO 1379 --- [http-nio-8088-exec-5] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:13:58.415  INFO 1379 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/category/list+++++++++
+2022-03-14 15:13:58.415  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/user/isAdmin+++++++++
+2022-03-14 15:13:58.415  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:58.415  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:58.415  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53934+++++++++
+2022-03-14 15:13:58.416  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.UserController.isAdmin+++++++++
+2022-03-14 15:13:58.416  INFO 1379 --- [http-nio-8088-exec-6] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:13:58.416  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:13:58.416  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:58.416  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:58.416  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53937+++++++++
+2022-03-14 15:13:58.416  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:13:58.416  INFO 1379 --- [http-nio-8088-exec-2] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=3}]+++++++++
+2022-03-14 15:13:58.417  INFO 1379 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:13:58.417  INFO 1379 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:58.417  INFO 1379 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:58.418  INFO 1379 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53936+++++++++
+2022-03-14 15:13:58.418  INFO 1379 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:13:58.418  INFO 1379 --- [http-nio-8088-exec-8] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=2}]+++++++++
+2022-03-14 15:13:58.415  INFO 1379 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:58.419  INFO 1379 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:58.420  INFO 1379 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53931+++++++++
+2022-03-14 15:13:58.420  INFO 1379 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.CategoryController.list+++++++++
+2022-03-14 15:13:58.420  INFO 1379 --- [http-nio-8088-exec-10] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[]+++++++++
+2022-03-14 15:13:58.420  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++请求地址:http://localhost:8088/index-config/list+++++++++
+2022-03-14 15:13:58.420  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++方法:POST+++++++++
+2022-03-14 15:13:58.420  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++源ip地址:0:0:0:0:0:0:0:1+++++++++
+2022-03-14 15:13:58.420  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++源端口:53935+++++++++
+2022-03-14 15:13:58.420  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++类与方法名 : com.shareplatform.demo.controller.IndexConfigController.list+++++++++
+2022-03-14 15:13:58.420  INFO 1379 --- [http-nio-8088-exec-4] com.shareplatform.demo.util.LogAspect    : +++++++++请求参数:[{indexType=1}]+++++++++

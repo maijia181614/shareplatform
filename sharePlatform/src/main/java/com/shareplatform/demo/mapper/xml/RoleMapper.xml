@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shareplatform.demo.mapper.RoleMapper">
+
+    <resultMap id="roleResultMap" type="com.shareplatform.demo.entity.Role">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="description" property="description"/>
+        <collection property="permissionList"  select="com.shareplatform.demo.mapper.PermissionMapper.listPermissionCascadeByRole" column="{roleId=id}"/>
+    </resultMap>
+
+    <select id="listRoleCascadeByUser" resultMap="roleResultMap">
+        select
+            role.id id,
+            role.name name,
+            role.description description
+        from
+            user_role
+        left join
+            role
+        on
+            user_role.role_id=role.id
+        where
+            user_role.user_id=#{userId}
+    </select>
+</mapper>
