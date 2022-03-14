@@ -4,6 +4,8 @@
 
 sharePlatForm是一个数码产品分享平台项目，包括前台系统与后台的管理功能，基于SpringBoot+MyBatis实现，前台功能包括平台首页、用户注册登录、数码产品搜索、产品浏览、订单查看、购物车、物品委托、个人信息等模块。
 
+This is a digital product sharing platform project, including front-end system and back-end management functions, based on SpringBoot + MyBatis implementation, front-end features include platform home page, user registration and login, digital product search, product browsing, order view, shopping cart, item entrust, personal information and other modules.
+
 1. 用户注册功能：平台新用户将在注册页面填写注册资料进行新用户注册。
 2. 用户登录功能：平台注册用户将在登录页面使用账号、密码进行登录。
 3. 物品搜索功能：用户在平台任一页面顶部导航栏输入物品关键字进行搜索。
