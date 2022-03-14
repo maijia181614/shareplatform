@@ -24,29 +24,29 @@ sharePlatForm是一个数码产品分享平台项目，包括前台系统与后�
 
 #### HOME PAGE
 
-![img](file:////private/var/folders/r2/21l03b3j3w35wfz29ch7hfm00000gn/T/com.kingsoft.wpsoffice.mac/wps-maijiaqiang/ksohtml/wpsbJ9Q1b.png)
+![img](img/wpsbJ9Q1b.png)
 
-![img](file:////private/var/folders/r2/21l03b3j3w35wfz29ch7hfm00000gn/T/com.kingsoft.wpsoffice.mac/wps-maijiaqiang/ksohtml/wpsR52NRC.png)
+![img](img/wpsR52NRC.png)
 
-![img](file:////private/var/folders/r2/21l03b3j3w35wfz29ch7hfm00000gn/T/com.kingsoft.wpsoffice.mac/wps-maijiaqiang/ksohtml/wps45J43C.png)
+![img](img/wps45J43C.png)
 
 ### CART PAGE
 
-![img](file:////private/var/folders/r2/21l03b3j3w35wfz29ch7hfm00000gn/T/com.kingsoft.wpsoffice.mac/wps-maijiaqiang/ksohtml/wpsRKJtDk.png)
+![img](img/wpsRKJtDk.png)
 
-![img](file:////private/var/folders/r2/21l03b3j3w35wfz29ch7hfm00000gn/T/com.kingsoft.wpsoffice.mac/wps-maijiaqiang/ksohtml/wpsbuH5Yc.png)
+![img](img/wpsbuH5Yc.png)
 
 
 
 ### PRODUCT DETAIL PAGE
 
-![img](file:////private/var/folders/r2/21l03b3j3w35wfz29ch7hfm00000gn/T/com.kingsoft.wpsoffice.mac/wps-maijiaqiang/ksohtml/wpsLs8wK2.png)
+![img](img/wpsLs8wK2.png)
 
 
 
 ### LOGIN PAGE
 
-![img](file:////private/var/folders/r2/21l03b3j3w35wfz29ch7hfm00000gn/T/com.kingsoft.wpsoffice.mac/wps-maijiaqiang/ksohtml/wpsvCS025.png)
+![img](img/wpsvCS025.png)
 
 
 
