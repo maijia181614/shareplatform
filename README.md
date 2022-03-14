@@ -24,7 +24,6 @@ sharePlatForm是一个数码产品分享平台项目，包括前台系统与后�
 
 #### HOME PAGE
 
-![img](img/wpsontgIi.jpg)
 
 ![img](img/wpsObtaY2.png)
 
