@@ -48,13 +48,6 @@ sharePlatForm是一个数码产品分享平台项目，包括前台系统与后�
 ![img](img/wpsYwChds.png)
 
 
-
-### MY INFO PAGE
-
-![img](img/wpsqW5Zj0.png)
-
-
-
 ### MY ORDER PAGE
 
 ![img](img/wpsseaZt0.png)
