@@ -52,41 +52,41 @@ sharePlatForm是一个数码产品分享平台项目，包括前台系统与后�
 
 ### MY INFO PAGE
 
-![img](file:////private/var/folders/r2/21l03b3j3w35wfz29ch7hfm00000gn/T/com.kingsoft.wpsoffice.mac/wps-maijiaqiang/ksohtml/wpsgqwtVv.png)
+![img](img/wpsgqwtVv.png)
 
 
 
 ### MY ORDER PAGE
 
-![img](file:////private/var/folders/r2/21l03b3j3w35wfz29ch7hfm00000gn/T/com.kingsoft.wpsoffice.mac/wps-maijiaqiang/ksohtml/wpstoB5AA.png)
+![img](img/wpstoB5AA.png)
 
-![img](file:////private/var/folders/r2/21l03b3j3w35wfz29ch7hfm00000gn/T/com.kingsoft.wpsoffice.mac/wps-maijiaqiang/ksohtml/wpsRtH3hH.png)
+![img](img/wpsRtH3hH.png)
 
 
 
 ### PUBLISH ENTRUST PAGE
 
-![img](file:////private/var/folders/r2/21l03b3j3w35wfz29ch7hfm00000gn/T/com.kingsoft.wpsoffice.mac/wps-maijiaqiang/ksohtml/wpsqZJAWx.png)
+![img](img/wpsqZJAWx.png)
 
 
 
 ### REGISTER PAGE
 
-![img](file:////private/var/folders/r2/21l03b3j3w35wfz29ch7hfm00000gn/T/com.kingsoft.wpsoffice.mac/wps-maijiaqiang/ksohtml/wpsFgARDf.png)
+![img](img/wpsFgARDf.png)
 
 
 
 ### SEARCH PAGE
 
-![img](file:////private/var/folders/r2/21l03b3j3w35wfz29ch7hfm00000gn/T/com.kingsoft.wpsoffice.mac/wps-maijiaqiang/ksohtml/wpshcZ8uu.png)
+![img](img/wpshcZ8uu.png)
 
 
 
 ### VERIFY ENTRUST PAGE
 
-![img](file:////private/var/folders/r2/21l03b3j3w35wfz29ch7hfm00000gn/T/com.kingsoft.wpsoffice.mac/wps-maijiaqiang/ksohtml/wpsA5xPdy.png)
+![img](img/wpsA5xPdy.png)
 
-![img](file:////private/var/folders/r2/21l03b3j3w35wfz29ch7hfm00000gn/T/com.kingsoft.wpsoffice.mac/wps-maijiaqiang/ksohtml/wpsz9vFhQ.png)
+![img](img/wpsz9vFhQ.png)
 
 
 
