@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shareplatform.demo.mapper.UserMapper">
+
+    <resultMap id="userResultMap" type="com.shareplatform.demo.entity.User">
+        <id column="user_id" property="userId" />
+        <result column="name" property="name"/>
+        <result column="sex" property="sex"/>
+        <result column="phone" property="phone"/>
+        <result column="userName" property="userName"/>
+        <result column="passWord" property="passWord"/>
+        <result column="address" property="address"/>
+        <result column="createTime" property="createTime"/>
+        <result column="salt" property="salt"/>
+        <collection property="roleList" select="com.shareplatform.demo.mapper.RoleMapper.listRoleCascadeByUser" column="{userId=user_id}"/>
+
+    </resultMap>
+
+    <select id="findAllUserInfoByUsername" resultMap="userResultMap">
+        select
+            *
+        from
+            user
+        where
+            userName=#{userName}
+    </select>
+
+    <insert id="register" useGeneratedKeys="true" keyProperty="userId" parameterType="com.shareplatform.demo.entity.User">
+        INSERT into user(`name`,`sex`,`phone`,userName,`passWord`,`address`,`createTime`,salt) VALUES(#{name},#{sex},#{phone},#{userName},#{passWord},#{address},#{createTime},#{salt});
+    </insert>
+
+    <update id="editUserInfo" parameterType="com.shareplatform.demo.entity.User">
+        UPDATE user SET
+                        sex = #{sex},
+                        phone = #{phone},
+                        address = #{address}
+                    WHERE user_id = #{userId}
+    </update>
+</mapper>

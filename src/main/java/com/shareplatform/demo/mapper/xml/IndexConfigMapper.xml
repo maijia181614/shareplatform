@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shareplatform.demo.mapper.IndexConfigMapper">
+
+    <select id="getRecommendBrandList"  resultType="com.shareplatform.demo.entity.Brand">
+        SELECT brand.*
+        FROM
+            home_brand
+            LEFT JOIN brand on home_brand.brand_id = brand.id
+        WHERE
+            home_brand.recommend.status = 1
+            AND brand.show_status = 1
+        ORDER BY
+            home_brand.sort DESC
+        LIMIT #{offset}, #{limit}
+    </select>
+</mapper>
